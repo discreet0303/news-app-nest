@@ -1,7 +1,7 @@
 import { Entity, PrimaryGeneratedColumn, Column, BaseEntity } from 'typeorm';
 
 @Entity()
-export class New extends BaseEntity{
+export class Article extends BaseEntity{
   @PrimaryGeneratedColumn()
   id: number
 
@@ -9,5 +9,8 @@ export class New extends BaseEntity{
   title: string;
 
   @Column('text')
-  description: string;
+  body: string;
+
+  @Column()
+  excerpt: string;
 }
