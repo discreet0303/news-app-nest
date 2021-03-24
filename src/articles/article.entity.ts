@@ -12,5 +12,5 @@ export class Article extends BaseEntity{
   body: string;
 
   @Column()
-  excerpt: string;
+  excrept: string;
 }
